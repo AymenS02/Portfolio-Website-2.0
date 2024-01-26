@@ -1,22 +1,21 @@
 import './App.scss'
-import Navbar from './components/navbar/navbar/Navbar'
+import About from './components/about/About'
+import Navbar from './components/navbar/Navbar'
 
 function App() {
 
   return (
     <>
-      <section id="Home">
+      <section id="Home" className='sectionAll'>
         <Navbar />
         
       </section>
-      <section id="About">
-        <video width="100%"  autoPlay loop muted>
-          <source src="./public/infiniteDrift.mp4" type="video/mp4" />
-        </video>
+      <section id="About" className="sectionAbout">
+        <About />
       </section>
-      <section id="Skills">Skills</section>
-      <section id="Projects">Projects</section>
-      <section id="Contact">Contact</section>
+      <section id="Skills" className='sectionAll'>Skills</section>
+      <section id="Projects" className='sectionAll'>Projects</section>
+      <section id="Contact" className='sectionAll'>Contact</section>
     </>
   )
 }

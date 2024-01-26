@@ -20,7 +20,12 @@ a {
     color: inherit;
 }
 
-section {
+.sectionAll {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.sectionAbout {
     height: 100vh;
     scroll-snap-align: center;
 }
