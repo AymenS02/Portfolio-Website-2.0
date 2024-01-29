@@ -1,0 +1,12 @@
+.home {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #f0ffff 0%, #a7b2c1 100%);
+    position: relative;
+    
+    .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        max-width: auto;
+    }
+}

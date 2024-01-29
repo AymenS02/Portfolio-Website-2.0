@@ -1,6 +1,8 @@
-html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+@media (max-width: 1200px) {
+    html {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
 }
 
 * {
