@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <div className="home">
         <div className="wrapper">
+          <div className="textContainer">
             <h2>Hi, my name is</h2>
             <h1>AYMEN SHOTERI</h1>
             <h3>Full Stack Developer</h3>
@@ -14,6 +15,7 @@ const Home = () => {
                 </a>  
                 <button href="mailto:aymenshoteri@gmail.com">Get In Touch</button>
             </div>
+          </div>
         </div>
     </div>
   )
