@@ -14,6 +14,29 @@ const textVariants = {
       staggerChildren: 0.1,
     },
   },
+  scrollArrow: {
+    y: 10,
+    opacity: 0,
+    transition: {
+      duration: 1,
+      repeat: Infinity,
+    },
+  },
+};
+
+const sliderVariants = {
+  initial: {
+    x: window.innerWidth,
+  },
+  animate: {
+    x: "-100%",
+    transition: {
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "loop",
+      duration: 15,
+    },
+  },
 };
 
 const Home = () => {
@@ -31,12 +54,13 @@ const Home = () => {
                 </a>  
                 <motion.button href="mailto:aymenshoteri@gmail.com" variants={textVariants}>Get In Touch</motion.button>
             </motion.div>
+            <motion.img className="scroll" src="public/arrow.png" alt="scroll" variants={textVariants} animate="scrollArrow"/>
           </motion.div>
         </div>
         <div className="slidingTextContainer">
-          <div className="slidingText">
-            Full Stack Developer
-          </div>
+          <motion.div className="slidingText" variants={sliderVariants} initial="initial" animate="animate">
+            <h2>Full Stack Developer</h2>
+          </motion.div>
         </div>
         <div className="imageContainer">
           <img src="public/photoface.png" alt="hero" />
