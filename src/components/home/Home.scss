@@ -4,7 +4,21 @@
     background: linear-gradient(180deg, #f0ffff 0%, #a7b2c1 100%);
     position: relative;
     
+    .imageContainer{
+        height: 30%;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        img {
+            border-radius: 50%;
+            width: 100%; // Set the width to 100% to make the image fill the container
+            max-height: 100%; // Set a maximum height to maintain aspect ratio
+        }
+    }
+
     .wrapper {
+        width: 50%;
         max-width: 1366px;
         height: 100%;
         margin: auto;
@@ -16,7 +30,40 @@
             flex-direction: column;
             justify-content: center;
             gap: 40px;
-
         }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #1b232b;
+            white-space: nowrap;
+        }
+
+        .buttons {
+            z-index: 2;
+            button {
+                padding: 20px;
+                border: 1px solid #1b232b;
+                border-radius: 10px;
+                background-color: transparent;
+                color: #1b232b;
+                margin-right: 20px;
+                font-weight: 300;
+            }
+
+            button:hover {
+                background-color: #1b232b;
+                color: #f0ffff;
+            }
+        }
+
+    }
+
+    .slidingTextContainer {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -120px;
+        white-space: nowrap;
+        color: rgba(21, 20, 20, 0.08)
     }
 }

@@ -1,21 +1,45 @@
 import "./Home.scss"
+import { motion } from "framer-motion";
+
+const textVariants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Home = () => {
   return (
     <div className="home">
         <div className="wrapper">
-          <div className="textContainer">
-            <h2>Hi, my name is</h2>
-            <h1>AYMEN SHOTERI</h1>
-            <h3>Full Stack Developer</h3>
-            <p>I&apos;m currently pursuing my studies in Computer Science and Mathematics at McMaster University.</p>
-            <div className="home-buttons">
+          <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
+            <motion.h2 variants={textVariants}>AYMEN SHOTERI</motion.h2>
+            <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
+            <motion.h3 variants={textVariants}>Student @ McMaster University</motion.h3>
+            <motion.p variants={textVariants}>Currently pursuing my studies in Computer Science and Mathematics.</motion.p>
+            <motion.div className="buttons" variants={textVariants}>
                 <a href="public/Aymen-Shoteri.pdf" className="resume" target="_blank">
-                    <button>View Resume</button>
+                    <motion.button variants={textVariants}>View Resume</motion.button>
                 </a>  
-                <button href="mailto:aymenshoteri@gmail.com">Get In Touch</button>
-            </div>
+                <motion.button href="mailto:aymenshoteri@gmail.com" variants={textVariants}>Get In Touch</motion.button>
+            </motion.div>
+          </motion.div>
+        </div>
+        <div className="slidingTextContainer">
+          <div className="slidingText">
+            Full Stack Developer
           </div>
+        </div>
+        <div className="imageContainer">
+          <img src="public/photoface.png" alt="hero" />
         </div>
     </div>
   )
