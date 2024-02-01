@@ -24,6 +24,21 @@ const textVariants = {
   },
 };
 
+const imageVariants = {
+  initial: {
+    x: 150,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const sliderVariants = {
   initial: {
     x: window.innerWidth,
@@ -42,6 +57,7 @@ const sliderVariants = {
 const Home = () => {
   return (
     <div className="home">
+      <div className="overlay">
         <div className="wrapper">
           <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
             <motion.h2 variants={textVariants}>AYMEN SHOTERI</motion.h2>
@@ -52,18 +68,19 @@ const Home = () => {
                 <a href="public/Aymen-Shoteri.pdf" className="resume" target="_blank">
                     <motion.button variants={textVariants}>View Resume</motion.button>
                 </a>  
-                <motion.button href="mailto:aymenshoteri@gmail.com" variants={textVariants}>Get In Touch</motion.button>
+                <motion.button href="mailto:aymenshoteri@gmail.com" variants={textVariants}>Contact Me</motion.button>
             </motion.div>
             <motion.img className="scroll" src="public/arrow.png" alt="scroll" variants={textVariants} animate="scrollArrow"/>
           </motion.div>
         </div>
+        <motion.div className="imageContainer" variants={imageVariants} initial="initial" animate="animate">
+          <img src="public/meComp.png" alt="hero" />
+        </motion.div>
+      </div>
         <div className="slidingTextContainer">
           <motion.div className="slidingText" variants={sliderVariants} initial="initial" animate="animate">
             <h2>Full Stack Developer</h2>
           </motion.div>
-        </div>
-        <div className="imageContainer">
-          <img src="public/photoface.png" alt="hero" />
         </div>
     </div>
   )

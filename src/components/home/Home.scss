@@ -2,88 +2,105 @@
     height: calc(100vh - 100px);
     overflow: hidden;
     background: linear-gradient(180deg, #f0ffff 0%, #a7b2c1 100%);
-    position: relative;
+    
 
-    .wrapper {
-        width: 50%;
-        max-width: 1366px;
-        height: 100%;
-        margin: auto;
+    .overlay {
+        height: calc(100vh - 100px);
         display: flex;
-        flex-direction: column;
-
-        .textContainer {
+        align-items: center;
+        
+        @media (max-width: 1200px) {
+            flex-direction: column;
+        }
+        
+        .wrapper {
             width: 50%;
+            max-width: 1366px;
             height: 100%;
+            margin: 10%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 300;
-            color: #1b232b;
-            white-space: nowrap;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 300;
-            color: #565b61;
-            white-space: nowrap;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: #565b61;
-            white-space: nowrap;
-        }
-
-        p {
-            font-size: 1.2rem;
-            font-weight: 300;
-            white-space: nowrap;
-        }
-
-        .buttons {
-            z-index: 2;
-            button {
-                padding: 20px;
-                border: 1px solid #1b232b;
-                border-radius: 10px;
-                background-color: transparent;
-                color: #1b232b;
-                margin-right: 20px;
+    
+            .textContainer {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 40px;
+            }
+    
+            h1 {
+                font-size: 3rem;
                 font-weight: 300;
+                color: #1b232b;
+                white-space: nowrap;
             }
-
-            button:hover {
-                background-color: #1b232b;
-                color: #f0ffff;
+    
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 300;
+                color: #565b61;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+    
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: #565b61;
+                white-space: nowrap;
+            }
+    
+            p {
+                font-size: 1.2rem;
+                font-weight: 300;
+                white-space: nowrap;
+            }
+    
+            .buttons {
+                display: flex;
+                z-index: 2;
+                button {
+                    padding: 20px;
+                    border: 1px solid #1b232b;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: #1b232b;
+                    margin-right: 20px;
+                    font-weight: 300;
+                }
+    
+                button:hover {
+                    background-color: #1b232b;
+                    color: #f0ffff;
+                }
+            }
+    
+            .scroll {
+                width: 10%;
             }
         }
 
-        .scroll {
-            width: 10%;
+        .imageContainer{
+            display: grid;
+            place-items: center;
+            width: 50%;
+            position: relative;
+            right: 0;
+            top: 0;
+            z-index: 5;
+            img {
+                border: 2px solid #1b232b;
+                border-radius: 2%;
+                width: 600px;
+                box-shadow: #1b232b 0px 0px 10px 0px;
+            }
         }
     }
+    
 
-    .imageContainer{
-        height: 30%;
-        position: absolute;
-        right: 0;
-        top: 0;
 
-        img {
-            border-radius: 50%;
-            width: 100%; // Set the width to 100% to make the image fill the container
-            max-height: 100%; // Set a maximum height to maintain aspect ratio
-        }
-    }
 
     .slidingTextContainer {
         position: absolute;

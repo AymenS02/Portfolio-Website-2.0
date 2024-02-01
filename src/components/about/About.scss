@@ -1,5 +1,6 @@
 .about {
-    
+    margin: 0;
+    padding: 0;
 
     video {
         width: 100%;
@@ -9,5 +10,13 @@
         object-fit: cover;
     }
 
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(to bottom, #19ecec00 70%, #b1c4d8 95%), 
+                    linear-gradient(to top, #00ffff00 70%, #a7b2c1 100%);
+    }
     
 }

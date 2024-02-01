@@ -3,8 +3,8 @@
     margin-left: 15%;
 
     .wrapper {
-        max-width: 1366px;
-        margin:auto;
+        max-width: 107vw;
+        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -13,10 +13,10 @@
 
     span {
         font-weight: bold;
-        
     }
 
     .social {
+        padding-right: 2%;
         display: flex;
         gap: 20px;
 

@@ -6,7 +6,9 @@ const About = () => {
         <video width="100%" autoPlay loop muted>
           <source src="./public/drift.mp4" />
         </video>
+        <div className="overlay"></div>
     </div>
+    
   )
 }
 
