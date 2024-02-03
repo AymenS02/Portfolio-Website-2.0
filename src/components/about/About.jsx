@@ -18,9 +18,8 @@ const About = () => {
             Sed eget nunc ac tortor aliquet ultricies. Sed eget nunc ac tortor
             aliquet ultricies.
           </p>
-          </div>
+        </div>
     </div>
-    
   )
 }
 
