@@ -1,7 +1,8 @@
 html {
-    //scroll-snap-type: y mandatory;
-    //scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     overflow-x: hidden;
+    scroll-snap-align: start; /* or end, center, etc. */
 }
 
 
@@ -24,16 +25,19 @@ a {
 
 .sectionAll {
     height: 100vh;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 .sectionAbout {
     height: 100vh;
     scroll-snap-align: center;
+    scroll-snap-align: start;
+
 }
 
 .sectionSkills {
     height: 100vh;
     scroll-snap-align: center;
     background: linear-gradient(180deg, #b1c4d8 80%, #f0ffff1d 100%);
+    scroll-snap-align: start;
 }
