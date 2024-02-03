@@ -3,24 +3,27 @@ import "./About.scss"
 const About = () => {
   return (
     <div className="about">
-        <video width="100%" autoPlay loop muted>
-          <source src="./public/drift.mp4" />
-        </video>
-        <div className="overlay"></div>
-        <div className="about-content">
-          <h1>About Us</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget
-            sagittis odio. Integer et orci auctor, tincidunt nunc in, rhoncus
-            libero. Proin nec leo eget nunc aliquam luctus. Nulla facilisi.
-            Phasellus et turpis vitae enim tempus congue. Sed eget nunc ac
-            tortor aliquet ultricies. Sed eget nunc ac tortor aliquet ultricies.
-            Sed eget nunc ac tortor aliquet ultricies. Sed eget nunc ac tortor
-            aliquet ultricies.
-          </p>
-        </div>
+      <div className="about-me">
+        <h1>About Me</h1>
+        <p>
+          I&apos;m passionate about software development and I&apos;m always looking for opportunities to expand my skill set and gain experience in the field. I&apos;m currently seeking an internship starting the Summer 2024 term.
+        </p>
+        <p>
+          I&apos;m particularly drawn to the world of software development, especially in areas involving databases and their integration into software systems. My passion lies in crafting efficient and robust solutions that leverage the power of databases.
+        </p>
+        <p>
+          While pursuing my goal of becoming a software developer, I devote my time to personal projects that involve database-driven applications. I find joy in creating impactful software solutions and continuously expanding my skill set.
+        </p>
+        <p>
+          Beyond my professional endeavors, I enjoy engaging in personal projects, much like this website, and actively seek connections with individuals who share similar passions and interests.
+        </p>
+        <p>
+          I love cars, as you can tell from the 3D model I imported on to this page. I run a instagram account for car spotting at my university <b>@mcmaster_cars</b>, check it out!
+        </p>
+      </div>
     </div>
   )
 }
+
 
 export default About;
