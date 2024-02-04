@@ -3,6 +3,7 @@ import "./About.scss"
 const About = () => {
   return (
     <div className="about">
+      <img className="about-pic" src="public\aboutpic1.png" alt="programming"></img>
       <div className="about-me">
         <h1>About Me</h1>
         <p>
