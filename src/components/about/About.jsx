@@ -19,7 +19,7 @@ const About = () => {
           Beyond my professional endeavors, I enjoy engaging in personal projects, much like this website, and actively seek connections with individuals who share similar passions and interests.
         </p>
         <p>
-          I love cars, as you can tell from the 3D model I imported on to this page. I run a instagram account for car spotting at my university <b>@mcmaster_cars</b>, check it out!
+          Im a car enthusiast who enjoys car spotting. I run a instagram account for car spotting at my university <b>@mcmaster_cars</b>, check it out!
         </p>
       </div>
     </div>
