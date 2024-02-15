@@ -3,9 +3,11 @@ import "./About.scss"
 const About = () => {
   return (
     <div className="about">
-      <div className="about-pic"></div>
+      <div className="about-pic">
+        <img className="pic" src="public\aboutpic1.png" alt="Profile Picture" />
+      </div>
       <div className="about-me">
-        <h1>About Me</h1>
+        <h1 className="heady">About Me</h1>
         <p>
           I&apos;m passionate about software development and I&apos;m always looking for opportunities to expand my skill set and gain experience in the field. I&apos;m currently seeking an internship starting the Summer 2024 term.
         </p>
