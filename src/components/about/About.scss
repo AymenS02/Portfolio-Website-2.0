@@ -10,15 +10,20 @@
 
     .about-pic {
         margin: 0;
-        padding: 20px;
         border-radius: 10%;
-        width: 550px;
+        background-color: #ee0000;
+        width: 50%;
+        height: auto;
     }
+    
     .about-me {
+        padding-right: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-grow: 1;
+        gap: 40px;
+        text-align: center;
     }
 }
