@@ -1,20 +1,23 @@
 .skills {
     margin: 0;
     width: 100%;
-    display: flex;
-    white-space: nowrap;
+
     .skills-slides {
-        margin-top: 3%;
+        border: 10px;
+        width: 50%;
+        background-color: aqua;
         padding: 2vh 0;
-        display: inline-block;
-        animation: 10s sliding infinite linear; /* Adjust duration as needed */
+        display: block;
+        margin: 0 auto; // Centering the block horizontally
+        text-align: center; // Centering the images inside the block
 
         img {
             margin: 0 1.8vh;
-            width: 9.2vh;
+            width: 8.2vh;
         }
     }
 }
+
 
 
 
