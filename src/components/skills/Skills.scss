@@ -2,7 +2,8 @@
     margin: 0;
     width: 100%;
 
-    .skills-slides {
+    .skills-ul {
+        list-style-type: none;
         border: 10px;
         width: 50%;
         background-color: aqua;
@@ -11,6 +12,9 @@
         margin: 0 auto; // Centering the block horizontally
         text-align: center; // Centering the images inside the block
 
+        .skills-li {
+
+        }
         img {
             margin: 0 1.8vh;
             width: 8.2vh;
