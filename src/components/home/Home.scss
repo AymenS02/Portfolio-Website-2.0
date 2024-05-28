@@ -63,17 +63,18 @@
                 z-index: 2;
                 button {
                     padding: 20px;
-                    border: 1px solid #1b232b;
+                    border: 1px solid #857d7d;
                     border-radius: 10px;
-                    background-color: transparent;
-                    color: #1b232b;
+                    background-color: #1b232b;
+                    color: #f0ffff;
                     margin-right: 20px;
                     font-weight: 300;
                 }
     
                 button:hover {
-                    background-color: #1b232b;
-                    color: #f0ffff;
+                    background-color: transparent;
+                    color: #1b232b;
+                    border: 1px solid #1b232b;
                 }
             }
     

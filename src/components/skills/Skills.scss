@@ -9,8 +9,9 @@
         background-color: aqua;
         padding: 2vh 0;
         display: block;
-        margin: 0 auto; // Centering the block horizontally
-        text-align: center; // Centering the images inside the block
+        margin: 0 auto; 
+        text-align: center; 
+        
 
         .skills-li {
 
@@ -18,6 +19,7 @@
         img {
             margin: 0 1.8vh;
             width: 8.2vh;
+            padding: 2vh;
         }
     }
 }
