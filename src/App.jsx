@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar'
 import Home from './components/home/Home'
 import Skills from './components/skills/Skills'
 import Experience from './components/experience/experience'
+import Projects from './components/projects/Projects'
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
       </section>
       <section id="Skills" className='sectionSkills'>
         <Skills />
+      </section>
+      <section id="Projects" className='sectionProjects'>
+        <Projects />
       </section>
     </>
   )

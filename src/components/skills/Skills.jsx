@@ -28,7 +28,7 @@ const Skills = () => {
         className="skills-ul"
         variants={container}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
       >
         <motion.li className="skills-li" variants={item}>
           <img src="public/python.webp" alt="python" />
