@@ -3,6 +3,7 @@ import About from './components/about/About'
 import Navbar from './components/navbar/Navbar'
 import Home from './components/home/Home'
 import Skills from './components/skills/Skills'
+import Experience from './components/experience/experience'
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
       </section>
       <section id="About" className="sectionAbout">
         <About />
+      </section>
+      <section id="Experience" className='sectionExperience'>
+        <Experience />
       </section>
       <section id="Skills" className='sectionSkills'>
         <Skills />
