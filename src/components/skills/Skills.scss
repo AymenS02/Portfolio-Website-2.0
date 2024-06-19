@@ -1,12 +1,23 @@
 .skills {
     margin: 0;
     width: 100%;
+    padding-top: 15vh;
+    
+    .skills-title {
+        font-size: 3vh;
+        text-align: center;
+        margin: 0;
+        padding: 2vh;
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2px;
+    }
 
     .skills-ul {
         list-style-type: none;
         border: 10px;
-        width: 50%;
-        background-color: aqua;
+        width: 30%;
         padding: 2vh 0;
         display: block;
         margin: 0 auto; 
@@ -18,7 +29,7 @@
         }
         img {
             margin: 0 1.8vh;
-            width: 8.2vh;
+            width: 10.2vh;
             padding: 2vh;
         }
     }

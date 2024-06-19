@@ -24,6 +24,8 @@ const item = {
 const Skills = () => {
   return (
     <div className="skills">
+
+      <h1 className="skills-title">Skills</h1>
       <motion.ul
         className="skills-ul"
         variants={container}
@@ -32,29 +34,20 @@ const Skills = () => {
       >
         <motion.li className="skills-li" variants={item}>
           <img src="public/python.webp" alt="python" />
-        </motion.li>
-        <motion.li className="skills-li" variants={item}>
-        <img src="public/javascript.svg" alt="javascript" />
+          <img src="public/javascript.svg" alt="javascript" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
           <img src="public/react.webp" alt="react" />
-        </motion.li>
-        <motion.li className="skills-li" variants={item}>
           <img src="public/node.webp" alt="node" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
           <img src="public/postgresql.svg" alt="postgresql" />
-        </motion.li>
-        <motion.li className="skills-li" variants={item}>
           <img src="public/java.webp" alt="java" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
           <img src="public/c++.webp" alt="c++" />
-        </motion.li>
-        <motion.li className="skills-li" variants={item}>
           <img src="public/Haskell-Logo.svg" alt="html" />
         </motion.li>
-
       </motion.ul>
     </div>
   )
