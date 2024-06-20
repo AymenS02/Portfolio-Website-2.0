@@ -19,18 +19,24 @@
         border: 10px;
         width: 30%;
         padding: 2vh 0;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto; 
         text-align: center; 
         
-
         .skills-li {
+            background-color: #262324;
+            margin-bottom: 2vh;
+            border-radius: 2vh;
 
-        }
-        img {
-            margin: 0 1.8vh;
-            width: 10.2vh;
-            padding: 2vh;
+            img {
+                margin: 0 1.8vh;
+                width: 10.2vh;
+                padding: 2vh;
+            }    
         }
     }
 }
