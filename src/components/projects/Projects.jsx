@@ -10,8 +10,25 @@ const Projects = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
         >
-            <h2>Projects</h2>
-            <p>Coming soon...</p>
+        <h1>Projects</h1>
+        <div className="projects-container">
+            <div className="project">
+                <h2>Project 1</h2>
+                <p>Project 1 description</p>
+            </div>
+            <div className="project">
+                <h2>Project 2</h2>
+                <p>Project 2 description</p>
+            </div>
+            <div className="project">
+                <h2>Project 3</h2>
+                <p>Project 3 description</p>
+            </div>
+            <div className="project">
+                <h2>Project 4</h2>
+                <p>Project 4 description</p>
+            </div>
+        </div>
         </motion.div>
         </div>
     )

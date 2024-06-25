@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@300&display=swap');
+
+body {
+  font-family: 'Playwrite NG Modern', sans-serif;
+}
+.projects {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #19ecec00 70%, #b1c4d8 95%), 
+    linear-gradient(to top, #19ecec00 70%, #b1c4d8 100%);
+
+    h1 {
+        font-size: 4.8vh;
+        color: #262324;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,40 +1,41 @@
-import "./Sidebar.scss"
-import Links from "./links/Links"
-import ToggleButton from "./tobbleButton/ToggleButton"
-import { useState } from "react"
-import { motion } from "framer-motion"
+import "./Sidebar.scss";
+import Links from "./links/Links";
+import ToggleButton from "./tobbleButton/ToggleButton";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const variants = {
-    open: {
-      clipPath: "circle(1500px at 50px 50px)",
-      transition: {
-        type: "spring",
-        stiffness: 20,
-      },
+  open: {
+    clipPath: "circle(1500px at 50px 50px)",
+    transition: {
+      type: "spring",
+      stiffness: 20,
     },
-    closed: {
-      clipPath: "circle(30px at 50px 50px)",
-      transition: {
-        delay: 0.5,
-        type: "spring",
-        stiffness: 400,
-        damping: 40,
-      },
+  },
+  closed: {
+    clipPath: "circle(30px at 50px 50px)",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
     },
-  };
+  },
+};
 
 const Sidebar = () => {
-    const [open, setOpen] = useState(false)
-    
-    return (
-        <motion.div className="sidebar" animate={open ? "open" : "closed"}>
-            <motion.div className="bg" variants={variants}>
-                <Links />
-            </motion.div>
-            <ToggleButton setOpen={setOpen}/>
+  const [open, setOpen] = useState(false);
+
+  return (
+    <motion.div className="sidebar" animate={open ? "open" : "closed"}>
+      {open && (
+        <motion.div className="bg" variants={variants}>
+          <Links />
         </motion.div>
+      )}
+      <ToggleButton setOpen={setOpen} />
+    </motion.div>
+  );
+};
 
-    )
-}
-
-export default Sidebar
+export default Sidebar;
