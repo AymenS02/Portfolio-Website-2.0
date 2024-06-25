@@ -10,10 +10,13 @@ const Experience = () => {
             transition={{ duration: 1 }}
         >
             <img src="public/thewin.png" alt="react" />
-            <div className="text">
-            
-                <h1>Experience</h1>
-                <p>Coming soon...</p>
+            <div className="experience-div">
+                <h1 className="title">Experience</h1>
+                    <div className="body">
+                        <h2>Front-end Developer</h2>
+                        <h3>2021 - Present</h3>
+                        <p>Working as a front-end developer at The Win, a digital marketing agency. I am responsible for developing websites and web applications using React and Angular.</p>
+                    </div>
             </div>
         </motion.div>
     )

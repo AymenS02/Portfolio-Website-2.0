@@ -3,14 +3,37 @@
     width: 100%;
     height: 100vh;
     padding: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     img {
         background-color: aqua;
         margin: 0 1.8vh;
-        width: 10.2vh;
-        padding: 2vh;
+        width: 30.2vh;
+        padding: 1.5vh;
     }    
-    .text {
-        margin: 10vh;
+
+    .experience-div {
+
+        .title {
+            font-size: 3.6vh;
+            font-weight: 700;
+            margin-bottom: 2vh;
+        }
+
+        .body {
+             h1 {
+                font-size: 2.4vh;
+                font-weight: 700;
+                margin-bottom: 1vh;
+             }
+
+            p {
+                font-size: 2.1vh;
+                margin-bottom: 1vh;
+            }
+        }
     }
 
 }
