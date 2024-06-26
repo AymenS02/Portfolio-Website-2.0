@@ -14,24 +14,20 @@ const Projects = () => {
         <div className="projects-container">
             <div className="project">
                 <h2>Project 1</h2>
-                <p>Project 1 description</p>
                 <img src="public\projects\cointracker.png" alt="coin project image" />
             </div>
             <div className="project">
                 <h2>Project 2</h2>
-                <p>Project 2 description</p>
                 <img src="public\projects\personalPort.png" alt="coin project image" />
 
             </div>
             <div className="project">
                 <h2>Project 3</h2>
-                <p>Project 3 description</p>
-                <img src="public\projects\dynamic_sun.mp4" alt="coin project image" />
+                <img src="public\projects\solarsystem.gif" alt="coin project image" />
 
             </div>
             <div className="project">
                 <h2>Project 4</h2>
-                <p>Project 4 description</p>
                 <img src="public\projects\connect4.png" alt="coin project image" />
             </div>
         </div>
