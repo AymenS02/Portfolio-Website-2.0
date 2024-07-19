@@ -1,12 +1,12 @@
-.projects {
+.projects-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin: 0;
     width: 100%;
     height: 100vh;
     padding: 10vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
     background: linear-gradient(to bottom, #19ecec00 70%, #b1c4d8 95%), 
     linear-gradient(to top, #19ecec00 70%, #b1c4d8 100%);
 
@@ -17,27 +17,39 @@
     }
 
     .projects-container {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;   
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
 
         img {
             width: 30vh;
             margin: 1rem;
             border-radius: 10px;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
 
-            &:hover {
-                transform: scale(1.1);
-            }
+        }
+
+        h3 {
+            color: #262324;
+            padding: 4px;
+            text-decoration: underline;
         }
 
         .project {
-                display: flex;
-                flex-direction: column;
-                align-items: center;            }
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;         
+            flex-direction: column;
+            padding: 2vh;
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:not(:hover) {
+                transform: scale(1);
+            }
+
         }
+    }
     
 }

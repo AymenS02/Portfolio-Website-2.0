@@ -27,7 +27,7 @@ const Experience = () => {
                                     <p>  Integrated <strong>secure payment gateways and user authentication systems</strong> using Collect.js, Tokenization, and Public Security Keys for smooth transactions. </p>
                                 </li>
                                 <li>
-                                    <p>  <strong>Designed and maintained RESTful APIs</strong> and optimized database queries to enhance platform performance and reliability. </p>
+                                    <p>  <strong>Designed and maintained RESTful APIs</strong> and optimized database queries to enhance platform performance and reliability with <strong>MongoDB</strong>. </p>
                                 </li>
                                 <li>
                                     <p>   Ensured smooth operation for over <strong>100 active users</strong>, effectively managing their data and maintaining high performance. </p>
