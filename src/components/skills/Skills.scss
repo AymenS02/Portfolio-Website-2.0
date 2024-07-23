@@ -5,13 +5,17 @@
     
     .skills-title {
         font-size: 4.8vh;
-        text-align: center;
+        text-align: end;
         margin: 0;
         padding: 2vh;
-        width: 30%;
-        display: block;
-        margin: 0 auto;
+        padding-right: 4vh;
+        width: 25%;
+        display:block;
+        margin: 0;
         margin-bottom: 2px;
+        background-color: #262324;
+        color: #b1c4d8;
+        border-radius: 0vh 2vh 2vh 0vh;
     }
 
     .skills-ul {
@@ -24,7 +28,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin: 0 auto; 
+        margin: 5vh auto; 
         text-align: center; 
         
         .skills-li {

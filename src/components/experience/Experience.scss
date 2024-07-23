@@ -1,27 +1,36 @@
 .experience-div {
     width: 100%;
     height: 100vh;
-    padding: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding-top: 10vh;
+
     .title1 {
         font-size: 4.8vh;
-        font-weight: 700;
-        margin-bottom: 5vh;
+        text-align: start;
+        padding: 2vh;
+        padding-left: 4vh;
+        width: 35%;
+        display: flex;
+        margin: 0;
+        margin-top: 5vh;
+
+        margin-bottom: 2px;
+        background-color: #262324;
+        color: #b1c4d8;
+        border-radius: 0vh 2vh 2vh 0vh;
     }
 
-    img {
-        margin: 0 1.8vh;
-        width: 30.2vh;
-        padding: 1.5vh;
-    }    
+
 
     .body1 {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 15vh 10vh;
+        img {
+            margin: 0 1.8vh;
+            width: 30.2vh;
+            padding: 1.5vh;
+        }    
 
         .experience-div1 {
         

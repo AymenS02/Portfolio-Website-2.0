@@ -30,20 +30,22 @@ function Card({ emoji, hueA, hueB }: Props) {
 
   return (
     <div className="begin">
-    <motion.div
-      className="card-container"
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
-    >
-      <div className="splash" style={{ background }} />
-      <motion.div className="card" variants={cardVariants}>
-        {emoji}
+      <motion.div
+        className="card-container"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 1 }} // Change the amount to 0.15 for 15% of the screen
+        transition={{ delay: 1 }} // Add a 1 second delay
+      >
+        <motion.div className="splash" style={{ background }} />
+        <motion.div className="card" variants={cardVariants}>
+          {emoji}
+        </motion.div>
       </motion.div>
-    </motion.div>
     </div>
   );
 }
+
 const code1 = <div className='card'>
   <h2>Crypto Tracker App with React</h2>
   <h3><a href="https://aymens02.github.io/Crypto-Tracker/">Click Here for Live Demo</a></h3>
@@ -82,7 +84,12 @@ const food: [React.ReactNode, number, number][] = [
 ];
 
 export default function Project() {
-  return food.map(([emoji, hueA, hueB], index) => (
-    <Card emoji={emoji} hueA={hueA} hueB={hueB} key={index} />
-  ));
+  return (
+    <div className='shell'>
+      <h1 className='header'>Projects</h1>
+      {food.map(([emoji, hueA, hueB], index) => (
+        <Card emoji={emoji} hueA={hueA} hueB={hueB} key={index} />
+      ))}
+    </div>
+  );
 }
