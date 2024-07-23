@@ -46,3 +46,10 @@ a {
     scroll-snap-align: center;
     background: linear-gradient(to bottom, #19ecec00 70%, #b1c4d8 95%)
 }
+
+.sectionProjects {
+    margin: 0;
+    padding: 0%;
+    background: linear-gradient(to bottom, #19ecec00 70%, #b1c4d8 95%), 
+    linear-gradient(to top, #19ecec00 70%, #b1c4d8 100%);
+}
