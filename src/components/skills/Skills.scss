@@ -5,17 +5,18 @@
     
     .skills-title {
         font-size: 4.8vh;
-        text-align: end;
+        text-align: start;
         margin: 0;
         padding: 2vh;
-        padding-right: 4vh;
-        width: 25%;
+        padding-left: 4vh;
+        width: -25%;
         display:block;
         margin: 0;
         margin-bottom: 2px;
+        margin-left: 75%;
         background-color: #262324;
         color: #b1c4d8;
-        border-radius: 0vh 2vh 2vh 0vh;
+        border-radius: 2vh 0vh 0vh 2vh;
     }
 
     .skills-ul {
