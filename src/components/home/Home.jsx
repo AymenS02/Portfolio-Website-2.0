@@ -65,7 +65,7 @@ const Home = () => {
             <motion.h3 variants={textVariants}>Student @ McMaster University</motion.h3>
             <motion.p variants={textVariants}>Currently pursuing my studies in Computer Science and Mathematics.</motion.p>
             <motion.div className="buttons" variants={textVariants}>
-                <a href="public/Aymen-Shoteri.pdf" className="resume" target="_blank">
+                <a href="public/ShoteriAresume.pdf" className="resume" target="_blank">
                     <motion.button variants={textVariants}>View Resume</motion.button>
                 </a>  
                 <motion.button href="mailto:aymenshoteri@gmail.com" variants={textVariants}>Contact Me</motion.button>

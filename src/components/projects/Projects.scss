@@ -1,5 +1,6 @@
 .shell {
     margin: 0;
+    padding-top: 15vh;
     .header {
         font-size: 4.8vh;
         text-align: start;
@@ -8,7 +9,7 @@
         width: 35%;
         display: flex;
         margin: 0;
-        border-top: 10vh;
+        // margin-top: 10vh;
         background-color: #262324;
         color: #b1c4d8;
         border-radius: 0vh 2vh 2vh 0vh;
