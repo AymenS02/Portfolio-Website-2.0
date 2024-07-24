@@ -11,7 +11,7 @@ const Experience = () => {
         >
             <h1 className="title1">Experience</h1>
             <div className="body1">
-                <img src="public/thewin.png" alt="react" />
+                <img src="/thewin.png" alt="react" />
                 <div className="experience-div1">
                     <h1 className="title2">Full Srack Developer Intern</h1>
                         <div className="body2">

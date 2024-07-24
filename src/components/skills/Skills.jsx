@@ -33,20 +33,20 @@ const Skills = () => {
         whileInView="visible"
       >
         <motion.li className="skills-li" variants={item}>
-          <img src="public/python.webp" alt="python" />
-          <img src="public/javascript.svg" alt="javascript" />
+          <img src="/python.webp" alt="python" />
+          <img src="/javascript.svg" alt="javascript" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
-          <img src="public/react.webp" alt="react" />
-          <img src="public/node.webp" alt="node" />
+          <img src="/react.webp" alt="react" />
+          <img src="/node.webp" alt="node" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
-          <img src="public/postgresql.svg" alt="postgresql" />
-          <img src="public/java.webp" alt="java" />
+          <img src="/postgresql.svg" alt="postgresql" />
+          <img src="/java.webp" alt="java" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
-          <img src="public/c++.webp" alt="c++" />
-          <img src="public/Haskell-Logo.svg" alt="html" />
+          <img src="/c++.webp" alt="c++" />
+          <img src="/Haskell-Logo.svg" alt="html" />
         </motion.li>
       </motion.ul>
     </div>

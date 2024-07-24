@@ -11,7 +11,7 @@ const About = () => {
 
       <motion.div className="about-pic"     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}>
-        <img className="pic" src="public\aboutpic1.png" alt="Profile Picture" />
+        <img className="pic" src="/aboutpic1.png" alt="Profile Picture" />
       </motion.div>
       <motion.div className="about-me"     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}>

@@ -50,26 +50,26 @@ const code1 = <div className='card'>
   <h2>Crypto Tracker App with React</h2>
   <h3><a href="https://aymens02.github.io/Crypto-Tracker/">Click Here for Live Demo</a></h3>
   <h3><a href="https://github.com/AymenS02/Crypto-Tracker">Github Repo</a></h3>
-  <img src="public\projects\cointracker.png" alt="coin project image" className="image" />
+  <img src="/projects/cointracker.png" alt="coin project image" className="image" />
 </div>
 
 const code2 = <div className='card'>
   <h2>Ex-Personal Portfolio</h2>
   <h3><a href="https://aymens02.github.io/AymenShoteri.github.io/">Click Here for Live Demo</a></h3>
   <h3><a href="https://aymens02.github.io/Crypto-Tracker/">Github Repo</a></h3>
-  <img src="public\projects\personalPort.png" alt="coin project image" className="image" />
+  <img src="/projects/personalPort.png" alt="coin project image" className="image" />
 </div>
 
 const code3 = <div className='card'>
     <h2>Solar Systems Graphic Design with C++</h2>
     <h3><a href="https://github.com/AymenS02/Solar-System">Github Repo</a></h3>
-    <img src="public\projects\solarsystem.gif" alt="coin project image" className="image" />
+    <img src="/projects/solarsystem.gif" alt="coin project image" className="image" />
 </div>
 
 const code4 = <div className='card'>
   <h2>Connect 4 with AI</h2>
   <h3><a href="https://github.com/AymenS02/Connect-4-Game">Github Repo</a></h3>
-  <img src="public\projects\connect4.png" alt="coin project image" className="image" />
+  <img src="/projects/connect4.png" alt="coin project image" className="image" />
 </div>
 
 const food: [React.ReactNode, number, number][] = [
