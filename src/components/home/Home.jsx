@@ -70,11 +70,11 @@ const Home = () => {
                 </a>  
                 <motion.button href="mailto:aymenshoteri@gmail.com" variants={textVariants}>Contact Me</motion.button>
             </motion.div>
-            <motion.img className="scroll" src="public/arrow.png" alt="scroll" variants={textVariants} animate="scrollArrow"/>
+            <motion.img className="scroll" src="/public/arrow.png" alt="scroll" variants={textVariants} animate="scrollArrow"/>
           </motion.div>
         </div>
         <motion.div className="imageContainer" variants={imageVariants} initial="initial" animate="animate">
-          <img src="public/meComp.png" alt="hero" />
+          <img src="/public/meComp.png" alt="hero" />
         </motion.div>
       </div>
         <div className="slidingTextContainer">
