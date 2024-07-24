@@ -74,7 +74,7 @@ const Home = () => {
           </motion.div>
         </div>
         <motion.div className="imageContainer" variants={imageVariants} initial="initial" animate="animate">
-          <img src="public/meComp.jpg" alt="hero" />
+          <img src="public/meComp.png" alt="hero" />
         </motion.div>
       </div>
         <div className="slidingTextContainer">
