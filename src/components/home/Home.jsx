@@ -68,7 +68,7 @@ const Home = () => {
                 <a href="/ShoteriAresume.pdf" className="resume" target="_blank">
                     <motion.button variants={textVariants}>View Resume</motion.button>
                 </a>  
-                <motion.button href="mailto:aymenshoteri@gmail.com" variants={textVariants}>Contact Me</motion.button>
+                <motion.button onClick={() => window.location.href = "mailto:aymenshoteri@gmail.com"} variants={textVariants}>Contact Me</motion.button>
             </motion.div>
             <motion.img className="scroll" src="./arrow.png" alt="scroll" variants={textVariants} animate="scrollArrow"/>
           </motion.div>

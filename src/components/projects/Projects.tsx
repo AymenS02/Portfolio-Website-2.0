@@ -54,31 +54,52 @@ const code1 = <div className='card'>
 </div>
 
 const code2 = <div className='card'>
-  <h2>Ex-Personal Portfolio</h2>
-  <h3><a href="https://aymens02.github.io/AymenShoteri.github.io/">Click Here for Live Demo</a></h3>
-  <h3><a href="https://aymens02.github.io/Crypto-Tracker/">Github Repo</a></h3>
-  <img src="/projects/personalPort.png" alt="coin project image" className="image" />
+  <h2>Pokemon Memory Game with React</h2>
+  <h3><a href="https://aymens02.github.io/Pokemon-Memory-Game/">Click Here for Live Demo</a></h3>
+  <h3><a href="https://github.com/AymenS02/Pokemon-Memory-Game">Github Repo</a></h3>
+  <img src="/projects/poke-game.png" alt="pokemon game image" className="image" />
 </div>
 
 const code3 = <div className='card'>
-    <h2>Solar Systems Graphic Design with C++</h2>
-    <h3><a href="https://github.com/AymenS02/Solar-System">Github Repo</a></h3>
-    <img src="/projects/solarsystem.gif" alt="coin project image" className="image" />
+  <h2>Ex-Personal Portfolio</h2>
+  <h3><a href="https://aymens02.github.io/AymenShoteri.github.io/">Click Here for Live Demo</a></h3>
+  <h3><a href="https://aymens02.github.io/Crypto-Tracker/">Github Repo</a></h3>
+  <img src="/projects/personalPort.png" alt="portfolio image" className="image" />
+</div>
+
+const code0 = <div className='card'>
+  <h2>PvP Library Rankings with Multiple API Integration</h2>
+  <h3><a href="https://aymens02.github.io/pvpoke-rankings-generator/">Click Here for Live Demo</a></h3>
+  <h3><a href="https://github.com/AymenS02/pvpoke-rankings-generator">Github Repo</a></h3>
+  <img src="/projects/poke-rank.png" alt="coin project image" className="image" />
 </div>
 
 const code4 = <div className='card'>
+    <h2>Solar Systems Graphic Design with C++</h2>
+    <h3><a href="https://github.com/AymenS02/Solar-System">Github Repo</a></h3>
+    <img src="/projects/solarsystem.gif" alt="solar system image" className="image" />
+</div>
+
+const code5 = <div className='card'>
   <h2>Connect 4 with AI</h2>
   <h3><a href="https://github.com/AymenS02/Connect-4-Game">Github Repo</a></h3>
-  <img src="/projects/connect4.png" alt="coin project image" className="image" />
+  <img src="/projects/connect4.png" alt="connect 4 image" className="image" />
+</div>
+
+const code6 = <div className='card'>
+  <h2>Scammer Penalty with Python</h2>
+  <h3><a href="https://github.com/AymenS02/Scammer-Penalty">Github Repo</a></h3>
+  <img src="/projects/scammer.webp" alt="scammer project image" className="image" />
 </div>
 
 const food: [React.ReactNode, number, number][] = [
-  [code1, 200, 0],
-  [code2, 200, 0],
-  [code3, 200, 0],
-  [code4, 200, 0],
-  // [code5, 100, 140],
-  // [code6, 205, 245],
+  [code1, 206, 254],
+  [code2, 175, 225],
+  [code3, 200, 250],
+  [code0, 200, 0],
+  [code4, 150, 200],
+  [code5, 200, 0],
+  [code6, 205, 245],
   // [code7, 260, 290],
   // [code8, 290, 320]
 ];
