@@ -27,7 +27,7 @@ function App() {
         <Projects />
       </section>
       <footer className='footer'>
-        <p>© 2021 by <a href="https://www.linkedin.com/in/aymen-shoteri/" target="_blank" rel="noreferrer">Aymen Shoteri</a></p>
+        <p>© 2024 by <a href="https://www.linkedin.com/in/aymen-shoteri/" target="_blank" rel="noreferrer">Aymen Shoteri</a></p>
         <p>All Rights Reserved, <a href="https://github.com/AymenS02/Portfolio-Website-2.0" target='_blank' rel="noreferrer" >Website Designed + Developed by Aymen Shoteri</a></p>
         
       </footer>
