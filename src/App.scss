@@ -24,18 +24,18 @@ a {
 }
 
 .sectionAll {
-    height: 100vh;
+    height: auto;
     scroll-snap-align: start;
 }
 
 .sectionAbout {
-    height: 100vh;
+    height: auto;
     scroll-snap-align: center;
     scroll-snap-align: start;
 }
 
 .sectionExperience {
-    height: 150vh;
+    height: 160vh;
     scroll-snap-align: center;
     background: linear-gradient(180deg, #b1c4d8 80%, #f0ffff1d 100%);
     scroll-snap-align: start;

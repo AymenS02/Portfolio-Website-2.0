@@ -1,20 +1,28 @@
+import { useState, useEffect } from "react";
 import "./About.scss"
 import { motion } from "framer-motion";
 
 const About = () => {
+
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setViewportWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <motion.div 
       className="about"
       initial="initial"
       whileInView="animate"
     >
-
-      <motion.div className="about-pic"     whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.9 }}>
+      {viewportWidth > 1100 && (<motion.div className="about-pic" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <img className="pic" src="/aboutpic1.png" alt="Profile Picture" />
       </motion.div>
-      <motion.div className="about-me"     whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.9 }}>
+      )}    
+      <motion.div className="about-me" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <motion.h1 className="heady">About Me</motion.h1>
         <motion.p>
           I&apos;m passionate about software development and I&apos;m always looking for opportunities to expand my skill set and gain experience in the field. I&apos;m currently seeking an internship starting the Summer 2024 term.

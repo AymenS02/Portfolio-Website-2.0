@@ -1,5 +1,6 @@
 import "./Home.scss"
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const textVariants = {
   initial: {
@@ -55,6 +56,14 @@ const sliderVariants = {
 };
 
 const Home = () => {
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setViewportWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="home">
       <div className="overlay">
@@ -77,11 +86,18 @@ const Home = () => {
           <img src="/meComp.png" alt="hero" />
         </motion.div>
       </div>
+      {viewportWidth > 1281 && (
         <div className="slidingTextContainer">
-          <motion.div className="slidingText" variants={sliderVariants} initial="initial" animate="animate">
+          <motion.div
+            className="slidingText"
+            variants={sliderVariants}
+            initial="initial"
+            animate="animate"
+          >
             <h2>Full Stack Developer</h2>
           </motion.div>
         </div>
+      )}
     </div>
   )
 }

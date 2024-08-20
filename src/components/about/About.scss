@@ -8,6 +8,10 @@
     display:flex;
     align-items: center;
 
+    @media (max-width: 1100px) {
+        
+        } 
+
     .about-pic {
         margin: 0;
         height: 80%;
@@ -20,24 +24,45 @@
     }
     
     .about-me {
-        margin-right: 3vh;
+        margin: 0 3vh; /* Equal margin on both sides for better balance */
         background-color: #262324;
-        padding: 8vh;
+        padding: 5vh 8vh; /* Reduce top/bottom padding for a tighter layout */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-grow: 1;
-        gap: 3vh;
+        gap: 2vh; /* Adjust gap for better spacing */
         text-align: center;
         color: #b1c4d8;
-        margin-left: 20px;
-        border-radius: 10%;
-
-        .heady {
-            font-size: 2.5rem;
-            font-weight: 700;
+        border-radius: 12px; /* A more subtle border-radius for modern look */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+      
+        @media (max-width: 1100px) {
+          padding: 4vh 5vh; /* Adjust padding for smaller screens */
+          gap: 1.5vh; /* Slightly reduce gap */
+          border-radius: 8px; /* Adjust radius for smaller screens */
         }
-        
-    }
+      
+        @media (max-width: 768px) {
+          padding: 3vh 4vh; /* Further adjust padding for mobile screens */
+          margin: 0 2vh; /* Narrow margin for mobile view */
+          gap: 1vh; /* Tighter gap on mobile */
+        }
+      
+        .heady {
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-bottom: 1vh;
+      
+          @media (max-width: 1100px) {
+            font-size: 2rem; /* Scale down font size for medium screens */
+          }
+      
+          @media (max-width: 768px) {
+            font-size: 1.8rem; /* Further scale down font size for mobile */
+          }
+        }
+      }
+      
 }

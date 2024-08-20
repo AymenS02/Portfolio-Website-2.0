@@ -2,20 +2,28 @@
     height: calc(100vh - 100px);
     overflow: hidden;
     background: linear-gradient(180deg, #f0ffff 0%, #a7b2c1 100%);
-    //#1d2525 new color black
+
+    @media (max-width: 912px) {
+        height: auto;
+        padding-bottom: 100px;
+    } 
 
     .overlay {
         height: calc(100vh - 100px);
         display: flex;
         align-items: center;
-        
+
+        @media (max-width: 912px) {
+            flex-direction: column;
+            height: auto;
+        }    
+
         .wrapper {
             width: 50%;
             max-width: 1366px;
             height: 100%;
             margin: 10%;
             display: flex;
-            flex-direction: column;
     
             .textContainer {
                 width: 50%;
@@ -30,14 +38,14 @@
                 font-size: 3rem;
                 font-weight: 300;
                 color: #1b232b;
-                white-space: nowrap;
+                white-space: wrap;
             }
     
             h2 {
                 font-size: 1.8rem;
                 font-weight: 300;
                 color: #565b61;
-                white-space: nowrap;
+                white-space: wrap;
                 font-weight: bold;
             }
     
@@ -45,13 +53,17 @@
                 font-size: 1.5rem;
                 font-weight: 300;
                 color: #565b61;
-                white-space: nowrap;
+                white-space: wrap;
             }
     
             p {
                 font-size: 1.2rem;
                 font-weight: 300;
                 white-space: nowrap;
+
+                @media (max-width: 912px) {
+                    white-space: normal;
+                }
             }
     
             .buttons {
@@ -93,11 +105,14 @@
                 width: 60%;
                 box-shadow: #1b232b 0px 0px 10px 0px;
             }
+
+            @media (max-width: 912px) {
+                width: 100%; /* Make the container take the full width */
+                position: static; /* Remove the absolute positioning */
+                margin-top: 20px; /* Optional: Add space above the container */
+            }
         }
     }
-    
-
-
 
     .slidingTextContainer {
         position: absolute;
