@@ -39,6 +39,35 @@ const Experience = () => {
                         </div>
                 </div>
             </div>
+            <div className="body1">
+                <img src="/logoN.png" alt="react" />
+                <div className="experience-div1">
+                    <h1 className="title2">Freelancing Web Developer</h1>
+                        <div className="body2">
+                            <h3>December 2023 - Present</h3>
+                            <ul>
+                                <li>
+                                    <p><strong>Developed custom websites</strong> using React and Next.js, and anything that aligned with the demands of the clients.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Implemented Tailwind CSS</strong> to streamline the styling process, resulting in faster development and consistent design across projects.</p>
+                                </li>
+                                <li>
+                                    <p>Integrated <strong>secure payment gateways and subscription models</strong> using Stripe and PayPal APIs, ensuring smooth and reliable transactions for clients.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Created interactive and animated websites</strong> using Framer Motion, engaging users with dynamic content and seamless transitions.</p>
+                                </li>
+                                <li>
+                                    <p>Managed <strong>client databases using MongoDB</strong>, ensuring secure storage and quick access to essential data for sometimes over 50 active clients.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Designed responsive and user-friendly interfaces</strong> with Figma and implemented them with React, improving client satisfaction and engagement.</p>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
         </motion.div>
     )
     }

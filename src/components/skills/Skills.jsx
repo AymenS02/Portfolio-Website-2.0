@@ -34,19 +34,23 @@ const Skills = () => {
       >
         <motion.li className="skills-li" variants={item}>
           <img src="/python.webp" alt="python" />
-          <img src="/javascript.svg" alt="javascript" />
+          <img src="/java.webp" className="smaller" alt="java" />
+          <img src="/c++.webp" alt="c++" />
+          <img src="/c.svg" alt="c" />
+          <img src="/haskell.svg" alt="haskell" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
+          <img src="/javascript.svg" alt="javascript" />
+          <img src="/typescript.svg" alt="typescript" />
           <img src="/react.webp" alt="react" />
           <img src="/node.webp" alt="node" />
+          <img src="/tailwind.png" alt="tailwind" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
           <img src="/postgresql.svg" alt="postgresql" />
-          <img src="/java.webp" alt="java" />
+          <img src="/mongodb.svg" className="larger" alt="mongodb" />
         </motion.li>
         <motion.li className="skills-li" variants={item}>
-          <img src="/c++.webp" alt="c++" />
-          <img src="/Haskell-Logo.svg" alt="html" />
         </motion.li>
       </motion.ul>
     </div>

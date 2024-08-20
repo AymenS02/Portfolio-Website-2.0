@@ -22,7 +22,7 @@
     .skills-ul {
         list-style-type: none;
         border: 10px;
-        width: 30%;
+        width: auto;
         padding: 2vh 0;
         display: flex;
         flex-direction: column;
@@ -36,12 +36,26 @@
             background-color: #262324;
             margin-bottom: 2vh;
             border-radius: 2vh;
+            width: 75vh;
+
 
             img {
                 margin: 0 1.8vh;
                 width: 10.2vh;
                 padding: 2vh;
             }    
+
+            .larger {
+                margin: 0 1.8vh;
+                width: 15.2vh;
+                padding: 2vh;
+            }
+
+            .smaller {
+                margin: 0 1.8vh;
+                width: 8.2vh;
+                padding: 2vh;
+            }
         }
     }
 }
