@@ -1,7 +1,9 @@
 .skills {
     margin: 0;
     width: 100%;
-    padding-top: 15vh;
+    padding-top: 10vh;
+    height: auto; /* Allows the height to expand based on the content */
+    min-height: 100%; /* Ensures it at least fills the viewport */
     
     .skills-title {
         font-size: 4.8vh;
@@ -17,6 +19,17 @@
         background-color: #262324;
         color: #b1c4d8;
         border-radius: 2vh 0vh 0vh 2vh;
+
+        @media (max-width: 1100px) {
+            font-size: 3.5vh; /* Scale down font size for smaller screens */
+            padding: 1.5vh 3vh; /* Adjust padding for smaller devices */
+            width: 100%;
+            border-radius: 0vh;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+          }
     }
 
     .skills-ul {
@@ -29,14 +42,23 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin: 5vh auto; 
+        margin-top: 5vh; 
         text-align: center; 
+        
         
         .skills-li {
             background-color: #262324;
             margin-bottom: 2vh;
             border-radius: 2vh;
             width: 75vh;
+
+            @media (max-width: 1100px) {
+
+                width: 80%;
+                text-align: center;
+                padding-left: 0;
+                padding-right: 0;
+            }
 
 
             img {

@@ -1,6 +1,7 @@
 .experience-div {
     width: 100%;
-    height: 100vh;
+    height: auto; /* Allows the height to expand based on the content */
+    min-height: 100%; /* Ensures it at least fills the viewport */
     padding-top: 10vh;
 
     .title1 {
@@ -16,6 +17,16 @@
         background-color: #262324;
         color: #b1c4d8;
         border-radius: 0vh 2vh 2vh 0vh;
+
+        @media (max-width: 1100px) {
+            font-size: 3.5vh; /* Scale down font size for smaller screens */
+            padding: 1.5vh 3vh; /* Adjust padding for smaller devices */
+            width: 100%;
+            border-radius: 0vh;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+          }
     }
 
 
@@ -25,6 +36,13 @@
         align-items: center;
         justify-content: center;
         margin: 15vh 10vh;
+        
+        
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            margin: 5vh 5vh;
+        }
+
         img {
             margin: 0 1.8vh;
             width: 30.2vh;
@@ -37,7 +55,7 @@
             align-items: flex-start;
             justify-content: center;
             flex-direction: column;
-    
+            
             .title2 {
                 font-size: 3.2vh;
                 font-weight: 700;
