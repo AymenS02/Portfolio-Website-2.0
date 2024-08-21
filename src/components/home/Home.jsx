@@ -73,13 +73,18 @@ const Home = () => {
             <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
             <motion.h3 variants={textVariants}>Student @ McMaster University</motion.h3>
             <motion.p variants={textVariants}>Currently pursuing my studies in Computer Science and Mathematics.</motion.p>
+            {viewportWidth < 1100 && (
+            <motion.img className="scroll" src="./arrow.png" alt="scroll" variants={textVariants} animate="scrollArrow"/>
+            )}
             <motion.div className="buttons" variants={textVariants}>
                 <a href="/ShoteriAresume.pdf" className="resume" target="_blank">
                     <motion.button variants={textVariants}>View Resume</motion.button>
                 </a>  
                 <motion.button onClick={() => window.location.href = "mailto:aymenshoteri@gmail.com"} variants={textVariants}>Contact Me</motion.button>
             </motion.div>
+            {viewportWidth >= 1100 && (
             <motion.img className="scroll" src="./arrow.png" alt="scroll" variants={textVariants} animate="scrollArrow"/>
+            )}
           </motion.div>
         </div>
         <motion.div className="imageContainer" variants={imageVariants} initial="initial" animate="animate">

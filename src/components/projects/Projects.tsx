@@ -60,6 +60,13 @@ const code2 = <div className='card'>
   <img src="/projects/poke-game.png" alt="pokemon game image" className="image" />
 </div>
 
+const code7 = <div className='card'>
+  <h2>Limeworth X-ray & Ultrasound with React & Tailwind</h2>
+  <h3><a href="https://aymens02.github.io/Limeworth/">Click Here for Live Demo</a></h3>
+  <h3><a href="https://github.com/AymenS02/Limeworth">Github Repo</a></h3>
+  <img src="/projects/limeworth.png" alt="limeworth image" className="image" />
+</div>
+
 const code3 = <div className='card'>
   <h2>Ex-Personal Portfolio</h2>
   <h3><a href="https://aymens02.github.io/AymenShoteri.github.io/">Click Here for Live Demo</a></h3>
@@ -95,12 +102,12 @@ const code6 = <div className='card'>
 const food: [React.ReactNode, number, number][] = [
   [code1, 206, 254],
   [code2, 175, 225],
+  [code7, 110, 170],
   [code3, 200, 250],
   [code0, 200, 0],
   [code4, 150, 200],
   [code5, 200, 0],
   [code6, 205, 245],
-  // [code7, 260, 290],
   // [code8, 290, 320]
 ];
 
