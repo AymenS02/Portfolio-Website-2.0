@@ -13,6 +13,7 @@ const About = () => {
   }, []);
 
   return (
+    
     <motion.div 
       className="about"
       initial="initial"
