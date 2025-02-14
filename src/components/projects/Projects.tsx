@@ -55,7 +55,7 @@ const code1 = <div className='card'>
 
 const code2 = <div className='card'>
   <h2>Pokemon Memory Game with React</h2>
-  <h3><a href="https://aymens02.github.io/Pokemon-Memory-Game/">Click Here for Live Demo</a></h3>
+  <h3><a href="https://poke-card-game-qwrrvokam-aymen-shoteris-projects.vercel.app/">Click Here for Live Demo</a></h3>
   <h3><a href="https://github.com/AymenS02/Pokemon-Memory-Game">Github Repo</a></h3>
   <img src="/projects/poke-game.png" alt="pokemon game image" className="image" />
 </div>
