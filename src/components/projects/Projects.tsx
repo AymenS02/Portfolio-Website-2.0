@@ -48,7 +48,7 @@ function Card({ emoji, hueA, hueB }: Props) {
 
 const code1 = <div className='card'>
   <h2>Crypto Tracker App with React</h2>
-  <h3><a href="https://aymens02.github.io/Crypto-Tracker/">Click Here for Live Demo</a></h3>
+  <h3><a href="https://crypto-tracker-swart-eight.vercel.app/">Click Here for Live Demo</a></h3>
   <h3><a href="https://github.com/AymenS02/Crypto-Tracker">Github Repo</a></h3>
   <img src="/projects/cointracker.png" alt="coin project image" className="image" />
 </div>
