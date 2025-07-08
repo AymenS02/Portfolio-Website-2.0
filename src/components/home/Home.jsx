@@ -71,7 +71,7 @@ const Home = () => {
           <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
             <motion.h2 variants={textVariants}>AYMEN SHOTERI</motion.h2>
             <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
-            <motion.h3 variants={textVariants}>Student @ McMaster University | Seeking Winter/Summer 2025 Internships</motion.h3>
+            <motion.h3 variants={textVariants}>Student @ McMaster University | Seeking Winter 2026 Internships</motion.h3>
             <motion.p variants={textVariants}>Currently pursuing my studies in Computer Science and Mathematics.</motion.p>
             {viewportWidth < 1100 && (
             <motion.img className="scroll" src="./arrow.png" alt="scroll" variants={textVariants} animate="scrollArrow"/>
